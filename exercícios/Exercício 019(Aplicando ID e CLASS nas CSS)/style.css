@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*Em HTML é id = # em CSS
+  Em HTML é class = . em CSS 
+  Tanto Class quanto ID serve para separar uma tag única que vc quer aplicar um estilo,
+   mas só no Class você pode por regra usar a mesmo configuração em outra tag diferente.
+   Podemos colocar 2 class na mesma tag desde que tenham configurações diferentes.
+*/
+
+body{
+    background-color: rgb(23, 212, 23);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+   color: rgb(9, 47, 80); 
+}
+
+h1#Principal{
+   text-align: center;
+   background-color: rgb(7, 94, 7);
+   color: white;
+}
+
+
+h2{
+    color: rgb(151, 184, 192);
+}
+.basico{
+    color:green
+}
+.intermediario{
+    color: yellow;
+}
+.avancado{ 
+    color: red;
+}
+.destaque{
+    background-color: rgb(148, 207, 30);
+}
