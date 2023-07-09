@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+            height: 94vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            /*
+            Position: absolute; Define que a imagem ou objeto terá um posicionamento absoluto na tela,
+            essa configuração permite que você configure o left e right de uma caixa ou imagem na tela. 
+            
+            O left e o right vão contar a partir do canto superior esquerdo do objeto ou imagem,
+            para centralizar uma imagem ou objeto.
+
+            transform:translate; Define em segundo nível a posição de um objeto ou imagem
+            (como uma transformação livre do que você quer fazer com aquele objeto).
+
+            Para colocar uma imagem no centro, você primeiro define o left e right à 50%,
+            depois você deve criar um transform:translate; e colocar os valores -50% e -50%
+            como está exemplificado abaixo.
+
+       
+            */
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            left: 50%;
+            top: 50%;
+            background-color: yellow;
+            margin: auto; 
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
