@@ -1,1 +1,72 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html,body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1 {  
+    /*
+    text-transform: uppercase; Serve para deixar todas as letras maiúsculas
+    font-variante: small-caps; Serve para deixar a primeira letra, que no caso é maiúscula, maior que as outras
+    */
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover { 
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal { 
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.466);
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
