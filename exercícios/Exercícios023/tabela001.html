@@ -14,12 +14,20 @@
             A propriedade border-collapse em CSS é usada para definir as bordas da célula presente dentro da tabela e diz se essas células compartilharão uma borda comum ou não.
             */
             width: 400px;
+            height:400px;
             border-collapse: collapse;
         }
 
         td{
+            /*
+            vertical align se trata do alinhamento vertical de um elemento html, seja ele um texto, uma imagem, etc. Pode ser dividido em: top, middle e bottom.
+            */
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+           
+            
             
         }
     </style>
@@ -28,32 +36,32 @@
     <h1>Minha Primeira Tabela</h1>
     <!--HIERARQUITA DE TABELAS (SIMPLES)
             TABELA = tabela
-            TABELA ROW = Linha de tabela
-            TABLE HEADER = Cabeçalho de tabela
-            TABLE DATA = Dado de tabela
+            TABELA ROW  (tr)= Linha de tabela
+            TABLE HEADER (th) = Cabeçalho de tabela
+            TABLE DATA (td)= Dado de tabela
         -->
 
     <table>
         <tr>
-        <td>A1</td>
-        <td>B1</td>
-        <td>C1</td>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
         </tr>
-         <tr>
+        <tr>
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
-         </tr>
-         <tr>
+        </tr>
+        <tr>
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
-         </tr>
-         <tr>
+        </tr>
+        <tr>
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
-         </tr>
+        </tr>
          
     </table>
     
