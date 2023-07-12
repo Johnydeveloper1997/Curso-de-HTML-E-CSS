@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <!--
+            colspan
+Este atributo contém um valor inteiro não negativo que indica quantas colunas a célula ocupará. Valor padrão 1. Valores acima de 1000 são considerados incorretos e serão modificados para o valor padrão 1.
+            rowspan
+Este atributo contém um valor inteiro não negativo que indica quantas linhas a célula estende. Valor padrão 1. Se seu valor é definido como 0, ele se estende até o final da tabela
+        -->
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+           
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+</body>
+</html>
