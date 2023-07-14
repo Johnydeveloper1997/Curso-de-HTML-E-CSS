@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframes</title>
+    <style>
+        iframe {
+            width: 450px;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
     <h1>testando o uso de um iframe</h1>
-    <p>axessando o site do cursoemvideo para aprender a programar</p>
+    <p>acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">cursoemvideo</a> para aprender a programar</p>
+    <p>acessando o site do
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scooling="no"></iframe>
+        para aprender a programar.
+        <!--O tamanho padrão do iframe é de 300x150pixels.
+            O parâmetro frameborder tem os valores 1 e 0, que se referem à colocar ou retirar a borda
+            O parâmetro scooling serve para remover ou nao a barra de rolagem.
+        -->
+    </p>
+    <p> Pena que o site do
+        <iframe src="https://www.google.com" frameborder="0"> 
+            <a href="https://www.google.com" target="_blank">google</a> 
+
+    </iframe>
+    não é compatível com iframe</p>
+    <p>O repositório do Guanabara <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe> também é legal</p>
+
+    
     
 </body>
 </html>
