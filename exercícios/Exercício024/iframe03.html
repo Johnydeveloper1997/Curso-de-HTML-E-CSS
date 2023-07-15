@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, mollitia fugit! Voluptas earum doloremque possimus quidem blanditiis nihil praesentium omnis sequi magnam? Eos fugit consequuntur dicta laborum distinctio odio repellat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero itaque vel deleniti, corporis accusantium reprehenderit architecto et doloribus fuga iure officiis optio quod similique quaerat praesentium, dolores nesciunt aliquam quidem?</p>
+
+    <ul>
+        <li><a target="frame" href="Páginas extras/pag01.html">Primeira Página</a></li>
+        <li><a  target="frame" href="./Páginas extras/pag02.html">Segunda Página</a></li>
+        <li><a  target="frame"  href="Páginas extras/pag03.html">Terceira Página</a></li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem modi perspiciatis illo esse deserunt facilis at culpa corrupti vitae ut ullam optio, accusantium mollitia, vel, reiciendis officia. Sunt, ratione dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, cupiditate ea. Culpa aspernatur dolore omnis? Corporis doloribus odio laborum labore sunt aliquam saepe assumenda laboriosam deleniti facere. Explicabo, quos vero?</p>
+
+        <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>
+            <img src='Logo HTML5.png'> ">
+            <p>Infelizmente seu navegador não é compatível com isso.</p>
+        </iframe> <!--Como vimos podemos usar um termo "name" no iframe para poder direcionar um target de um link que fará com que o link abra no iframe.
+            O termo "srcdoc" serve para vc criar um html dentro do termo, html este que será carregado assim que você abrir o site(antes de se clicar em algo). 
+        -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, iusto libero. Commodi assumenda nesciunt ab fugit quasi iusto ea repudiandae eos voluptatem qui praesentium a, similique laboriosam autem tenetur excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non illum quae nihil eligendi dolore autem possimus similique veniam accusantium nostrum? Itaque porro enim officia incidunt quibusdam labore, consequatur aspernatur quisquam!</p>
+</body>
+</html>
