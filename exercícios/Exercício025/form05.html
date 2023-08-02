@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário5</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--
+                Nos input de type radio, nós devemos colocar o mesmo "name" em todos os inputs do mesmo grupo, para que a caixa de seleção mude de acordo com o item selecionado
+                -->
+                <!--Podemos usar o "checked" nos inputs para que um já fique preciamente selecionado-->
+        <input type="radio" name="sexo" id="isxmas"><label for="isxmas">Masculino </label><br>
+        <input type="radio" name="sexo" id="isxfem" checked><label for="isxfem">Feminino</label><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iesfut" checked><label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação<br></label>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label><br>
+        </fieldset>
+
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
